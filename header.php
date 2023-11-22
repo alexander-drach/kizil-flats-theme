@@ -16,21 +16,10 @@
             <div class="header__inner">
                 <button class="hamb" type="button" aria-label="открыть/закрыть меню"></button>
                 <a class="logo logo--header" href="/">
-                    <img width="51" height="47" src="assets-gulp/build/img/svg/logo.svg"
-                         alt="Логотип Квартиры посуточно в Кызыле">
+                    <img width="51" height="47" src="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/svg/logo.svg" alt="Логотип Квартиры посуточно в Кызыле">
                 </a>
                 <nav class="nav">
-                    <ul class="list main-menu">
-                        <li class="main-menu__item">
-                            <a href="page-about.php">О нас</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="page-rules.php">Правила проживания</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="page-booking.php">Бронирование и оплата</a>
-                        </li>
-                    </ul>
+                  <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'list main-menu', 'theme_location' => 'header' ) ); ?>
                     <ul class="list header__contact">
                         <li class="header__whatsapp">
                           <?php require 'includes/link-whatsapp.php' ?>

@@ -56,13 +56,13 @@ Template Name: Страница - Главная
                                       <h3 class="card__title"><?php the_title() ?></h3>
                                       <div class="card__rooms">
                                           <svg width="15" height="15">
-                                              <use xlink:href="assets-gulp/build/img/sprite.svg#icon-room"></use>
+                                              <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-room"></use>
                                           </svg>
                                           Количество комнат: <span> 1</span>
                                       </div><!-- card__rooms -->
                                       <div class="card__beds">
                                           <svg width="15" height="15">
-                                              <use xlink:href="assets-gulp/build/img/sprite.svg#icon-bed"></use>
+                                              <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-bed"></use>
                                           </svg>
                                           Спальных мест: <span>4 (2+2)</span>
                                       </div><!-- card__beds -->

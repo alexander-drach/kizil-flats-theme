@@ -1495,6 +1495,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+[data-js-focus-visible] .header {
+  top: 32px;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -2585,11 +2589,11 @@ p:last-child {
   margin-bottom: 90px;
 }
 
-.footer__menu li {
+.footer__menu .menu-item {
   margin-bottom: 30px;
 }
 
-.footer__menu li:last-child {
+.footer__menu .menu-item:last-child {
   margin-bottom: 0;
 }
 

@@ -14,7 +14,12 @@ add_action( 'wp_enqueue_scripts', function () {
   wp_enqueue_script('main_js', PATH_JS . 'main.min.js');
 });
 
-// подключение миниатюр в записи
 add_action( 'after_setup_theme', function () {
+
+  // подключение миниатюр в записи
   add_theme_support('post-thumbnails'  );
+
+  // регистрация меню
+  register_nav_menu('header', 'меню header');
+  register_nav_menu('footer', 'меню footer');
 } );

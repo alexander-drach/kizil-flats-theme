@@ -37,7 +37,7 @@ Template Name: Страница - Правила проживания
                     </ul>
                     <div class="attention">
                         <svg class="attention__icon" width="25" height="25">
-                            <use xlink:href="assets-gulp/build/img/sprite.svg#icon-attention"></use>
+                            <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-attention"></use>
                         </svg>
                         <div class="attention__text">
                             <p>
