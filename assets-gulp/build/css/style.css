@@ -2821,6 +2821,10 @@ p:last-child {
   width: 100%;
 }
 
+.pay-desc h3 {
+  margin-top: 30px;
+}
+
 .rules-content__inner {
   display: -webkit-box;
   display: -ms-flexbox;
