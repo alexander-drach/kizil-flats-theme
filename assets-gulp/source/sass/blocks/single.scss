@@ -1,0 +1,181 @@
+.single-content {
+    padding-top: 55px;
+    padding-bottom: 90px;
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+}
+
+.return-catalog {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+    @include vp-1023 {
+        margin-left: 24px;
+    }
+
+    @include vp-767 {
+        margin-left: 16px;
+    }
+}
+
+.return-catalog__icon {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider {
+    position: relative;
+    width: 65%;
+    margin-bottom: 50px;
+
+    @include vp-1023 {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: $color-dark-grey;
+    background-color: #ffffff;
+    border: none;
+    transition: all $trans-default;
+
+    &:hover {
+        box-shadow: 0px 2px 10px 0px $color-default-white;
+        color: $color-gold;
+    }
+
+    &::after {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+.single-desc {
+    background-color: $color-default-white;
+}
+
+.flat-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.20);
+}
+
+.flat-desc {
+    padding: 60px 20px 0 50px;
+    width: 35%;
+    font-size: 18px;
+
+    @include vp-1023 {       
+        width: 100%;
+        padding: 0 50px 0 50px;
+    }
+
+    @include vp-639 {       
+        width: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
+.location-price {
+    @include vp-1023 {
+        display: flex;
+        width: 100%;
+    }
+
+    @include vp-639 {       
+       flex-wrap: wrap;
+    }
+}
+
+.flat-location {
+    margin-bottom: 30px;
+
+    @include vp-1023 {
+        width: 50%;
+        padding-right: 40px;
+
+        @include vp-639 {       
+            width: 100%;
+        }
+    }
+}
+
+.flat-location__row {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.flat-price {
+    font-size: 22px;
+    @include vp-1023 {
+        width: 50%;
+    }
+
+    @include vp-639 {       
+        width: 100%;
+    }
+}
+
+.flat-price__row {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.flat-features {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include vp-639 {   
+        padding: 0 20px 0 20px;
+    }
+}
+
+.flat-features__icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.similar-flats {
+    margin-top: 60px;
+}

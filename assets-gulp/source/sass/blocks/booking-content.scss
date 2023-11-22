@@ -1,0 +1,32 @@
+.booking-content {
+    h2 {
+        text-align: center;
+    }
+}
+
+.booking-content__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include vp-1023 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    @include vp-639 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.booking-desc {
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.pay-desc {
+    width: 100%;
+}

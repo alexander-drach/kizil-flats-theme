@@ -1,0 +1,62 @@
+.card {
+    background-color: $color-default-white;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.20);
+
+    &:hover {
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.20);
+
+        .card__title {
+            color: $color-gold;
+        }
+    }
+}
+
+.card__content {
+    padding: 15px 25px 25px 25px;
+
+    @include vp-479 {
+        padding: 15px 10px 25px 10px;
+    }
+
+    svg {
+        margin-right: 20px;
+        flex-shrink: 0;
+
+        @include vp-479 {
+            margin-right: 10px;
+        }
+    }
+}
+
+.card__title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-light-gray;
+    margin-bottom: 18px;
+    transition: color $trans-default;
+}
+
+.card__rooms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    span {
+        margin-left: 5px;
+    }
+}
+
+.card__beds {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    span {
+        margin-left: 5px;
+    }
+}
+
+.card__price {
+    span {
+        font-weight: bold;
+    }
+}
