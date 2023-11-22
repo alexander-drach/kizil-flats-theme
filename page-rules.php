@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Страница - Правила проживания
+*/
+?>
 <?php get_header(); ?>
 <main class="rules-content">
     <div class="rules-content__inner">

@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Страница - Бронирование и оплата
+*/
+?>
 <?php get_header(); ?>
 <main class="booking-content">
     <div class="booking-content__inner">

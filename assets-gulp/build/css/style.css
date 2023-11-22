@@ -2441,11 +2441,11 @@ p:last-child {
   pointer-events: all;
 }
 
-.logo--header {
+.header .logo--header {
   margin-right: 30px;
 }
 
-.header__inner {
+.header .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2454,7 +2454,7 @@ p:last-child {
   align-items: center;
 }
 
-.nav {
+.header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2465,7 +2465,7 @@ p:last-child {
   transition: opacity 0.3s ease;
 }
 
-.main-menu {
+.header .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2474,15 +2474,15 @@ p:last-child {
   align-items: center;
 }
 
-.main-menu li {
+.header .main-menu li {
   margin-right: 56px;
 }
 
-.main-menu li:last-child {
+.header .main-menu li:last-child {
   margin-right: 0;
 }
 
-.header__contact {
+.header .header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2492,7 +2492,7 @@ p:last-child {
   margin-left: 120px;
 }
 
-.header__contact a {
+.header .header__contact a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2501,12 +2501,12 @@ p:last-child {
   align-items: center;
 }
 
-.header__phone {
+.header .header__phone {
   margin-left: 30px;
   margin-right: 70px;
 }
 
-.header__email {
+.header .header__email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2515,11 +2515,11 @@ p:last-child {
   align-items: center;
 }
 
-.header__email svg {
+.header .header__email svg {
   margin-right: 10px;
 }
 
-.hamb {
+.header .hamb {
   display: none;
   width: 116px;
   height: 17px;
@@ -2534,7 +2534,7 @@ p:last-child {
   flex-shrink: 0;
 }
 
-.mobile-header-phone {
+.header .mobile-header-phone {
   display: none;
 }
 
@@ -3250,11 +3250,11 @@ p:last-child {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .header__contact {
+  .header .header__contact {
     margin-left: 50px;
   }
 
-  .header__email {
+  .header .header__email {
     font-size: 0;
   }
 }
@@ -3300,19 +3300,19 @@ p:last-child {
     width: 50%;
   }
 
-  .logo--header {
+  .header .logo--header {
     margin-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .header__inner {
+  .header .header__inner {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  .nav {
+  .header .nav {
     opacity: 0;
     pointer-events: none;
     padding-top: 50px;
@@ -3331,7 +3331,7 @@ p:last-child {
     font-size: 25px;
   }
 
-  .main-menu {
+  .header .main-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3339,16 +3339,16 @@ p:last-child {
     margin-bottom: 50px;
   }
 
-  .main-menu li {
+  .header .main-menu li {
     margin-right: 0;
     margin-bottom: 40px;
   }
 
-  .main-menu li:last-child {
+  .header .main-menu li:last-child {
     margin-bottom: 0;
   }
 
-  .header__contact {
+  .header .header__contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3357,31 +3357,31 @@ p:last-child {
     margin-right: 0;
   }
 
-  .header__phone {
+  .header .header__phone {
     margin-top: 40px;
     margin-bottom: 25px;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .header__email {
+  .header .header__email {
     font-size: 25px;
   }
 
-  .header__email svg {
+  .header .header__email svg {
     display: none;
   }
 
-  .header__whatsapp svg {
+  .header .header__whatsapp svg {
     width: 30px;
     height: 30px;
   }
 
-  .hamb {
+  .header .hamb {
     display: block;
   }
 
-  .mobile-header-phone {
+  .header .mobile-header-phone {
     display: block;
   }
 
@@ -3705,7 +3705,7 @@ p:last-child {
     column-count: 1;
   }
 
-  .mobile-header-phone {
+  .header .mobile-header-phone {
     font-size: 14px;
   }
 

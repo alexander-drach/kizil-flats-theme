@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Страница - О нас
+*/
+?>
 <?php get_header(); ?>
 <main class="about-content">
     <section class="about-content__intro">
