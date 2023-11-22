@@ -1,4 +1,4 @@
-<?php require_once 'header.php' ?>
+<?php get_header(); ?>
 <main>
 	<section class="intro">
 		<div class="intro__inner">
@@ -74,4 +74,4 @@
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A51b774739e189635a30f4e564472275b0320ebc28b3b71f92d4f7da0486d9d96&amp;source=constructor"></iframe>
 	</div>
 </main>
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<?php require_once 'header.php' ?>
+<?php get_header(); ?>
 <main class="booking-content">
     <div class="booking-content__inner">
         <h2>Бронирование</h2>
@@ -54,4 +54,4 @@
         </div><!-- container -->
     </div>
 </main>
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

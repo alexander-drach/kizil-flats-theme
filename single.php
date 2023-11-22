@@ -1,4 +1,4 @@
-<?php require_once 'header.php' ?>
+<?php get_header(); ?>
 <?php
 $flat_features = [
     'Wi Fi',
@@ -152,4 +152,4 @@ $flat_features = [
         </div><!-- container -->
     </section>
 </main>
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

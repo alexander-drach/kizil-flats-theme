@@ -1,4 +1,4 @@
-<?php require_once 'header.php' ?>
+<?php get_header(); ?>
 <main class="about-content">
     <section class="about-content__intro">
         <div class="about-content__overlay">
@@ -128,4 +128,4 @@
         </div>
     </section><!-- about-content__guarantee -->
 </main>
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

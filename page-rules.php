@@ -1,4 +1,4 @@
-<?php require_once 'header.php' ?>
+<?php get_header(); ?>
 <main class="rules-content">
     <div class="rules-content__inner">
         <h2>Правила проживания</h2>
@@ -70,4 +70,4 @@
         </div><!-- container -->
     </div>
 </main>
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>
