@@ -4,35 +4,15 @@ Template Name: Страница - Главная
 */
 ?>
 <?php get_header(); ?>
-    <main>
-        <section class="intro">
-            <div class="intro__inner">
-                <h1>
-                  <?php the_field('glavnyj_zagolovok'); ?>
-                    <span><?php the_field('melkij_tekst_u_zagolovka'); ?></span>
-                </h1>
-                <div class="intro__desc">
-                  <?php the_field('glavnoe_opisanie'); ?>
-                </div>
-                <a class="btn btn-primary" href="#" data-open-modal="feedback">Забронировать</a>
-            </div>
-        </section>
+    <main class="category-content">
         <div class="filter">
           <?php wp_nav_menu(array('container' => 'none', 'menu_class' => 'list', 'theme_location' => 'filter')); ?>
         </div><!-- filterr -->
         <section class="flats">
             <div class="container">
-                <h2 class="visually-hidden">Список квартир</h2>
+                <h1><?php single_cat_title(); ?></h1>
                 <ul class="list list--main">
-
-                  <?php
-                  $args_news = array(
-                    'showposts' => 150,
-                    'offset' => 0,
-                  );
-                  $recent = new WP_Query($args_news);
-                  while ($recent->have_posts()) : $recent->the_post();
-                    ?>
+                  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                       <li>
                           <a href="<?php the_permalink() ?>?flat_name=<?php the_title(); ?>">
                               <article class="card">
@@ -60,14 +40,14 @@ Template Name: Страница - Главная
                               </article>
                           </a>
                       </li>
-                  <?php endwhile;
-                  wp_reset_query(); ?>
+                  <?php endwhile; ?>
 
+                  <?php endif; ?>
                 </ul>
             </div><!-- container -->
         </section>
         <div class="map map--main">
-            <?php the_content() ?>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A51b774739e189635a30f4e564472275b0320ebc28b3b71f92d4f7da0486d9d96&amp;source=constructor"></iframe>
         </div>
     </main>
 <?php get_footer(); ?>

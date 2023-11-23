@@ -22,4 +22,5 @@ add_action( 'after_setup_theme', function () {
   // регистрация меню
   register_nav_menu('header', 'меню header');
   register_nav_menu('footer', 'меню footer');
+  register_nav_menu('filter', 'меню filter');
 } );

@@ -84,7 +84,6 @@ Template Name: Страница - О нас
                             <div class="features__icon">
                               <?php
                                   $image = get_sub_field('preimushhestva_ikonka');
-                                  var_dump($image);
                               ?>
                                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" >
                             </div>

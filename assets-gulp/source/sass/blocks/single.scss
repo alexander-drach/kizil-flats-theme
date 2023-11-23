@@ -10,6 +10,12 @@
         line-height: normal;
         margin-bottom: 15px;
     }
+
+  .btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 40px;
+  }
 }
 
 .return-catalog {
@@ -87,12 +93,12 @@
     width: 35%;
     font-size: 18px;
 
-    @include vp-1023 {       
+    @include vp-1023 {
         width: 100%;
         padding: 0 50px 0 50px;
     }
 
-    @include vp-639 {       
+    @include vp-639 {
         width: 100%;
         padding: 0 20px 0 20px;
     }
@@ -109,7 +115,7 @@
         width: 100%;
     }
 
-    @include vp-639 {       
+    @include vp-639 {
        flex-wrap: wrap;
     }
 }
@@ -121,7 +127,7 @@
         width: 50%;
         padding-right: 40px;
 
-        @include vp-639 {       
+        @include vp-639 {
             width: 100%;
         }
     }
@@ -145,7 +151,7 @@
         width: 50%;
     }
 
-    @include vp-639 {       
+    @include vp-639 {
         width: 100%;
     }
 }
@@ -166,7 +172,7 @@
     padding-left: 50px;
     padding-right: 50px;
 
-    @include vp-639 {   
+    @include vp-639 {
         padding: 0 20px 0 20px;
     }
 }
