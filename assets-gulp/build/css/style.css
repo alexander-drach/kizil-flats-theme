@@ -1755,6 +1755,10 @@ p:last-child {
   padding: 30px;
 }
 
+.modal__form a {
+  text-decoration: underline;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -2355,14 +2359,6 @@ p:last-child {
   width: 7px;
   height: 7px;
   background-color: #ff0000;
-}
-
-.list--similar-flats {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
 }
 
 .list--flat-features {
@@ -3176,6 +3172,28 @@ p:last-child {
   margin-bottom: 40px;
 }
 
+.rp4wp-related-posts {
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.rp4wp-related-posts * {
+  float: none !important;
+}
+
+.rp4wp-related-posts .rp4wp-related-post-image {
+  width: 100%;
+  padding-right: 0;
+}
+
+.rp4wp-related-posts ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3314,11 +3332,6 @@ p:last-child {
 
   .list--square-small li::before {
     left: 0;
-  }
-
-  .list--similar-flats {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .list--features {
@@ -3539,6 +3552,11 @@ p:last-child {
     font-size: 20px;
     font-weight: 400;
   }
+
+  .rp4wp-related-posts ul {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1023px) and (max-width: 639px) {
@@ -3723,11 +3741,6 @@ p:last-child {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .list--similar-flats {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .list--flat-features {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -3796,6 +3809,11 @@ p:last-child {
 
   .flat-features {
     padding: 0 20px 0 20px;
+  }
+
+  .rp4wp-related-posts ul {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

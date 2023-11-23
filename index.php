@@ -45,16 +45,16 @@ Template Name: Страница - Главная
                                           <svg width="15" height="15">
                                               <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-room"></use>
                                           </svg>
-                                          Количество комнат: <span> 1</span>
+                                          Количество комнат: <span> <?php the_field('kolichestvo_komnat'); ?></span>
                                       </div><!-- card__rooms -->
                                       <div class="card__beds">
                                           <svg width="15" height="15">
                                               <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-bed"></use>
                                           </svg>
-                                          Спальных мест: <span>4 (2+2)</span>
+                                          Спальных мест: <span><?php the_field('spalnyh_mest'); ?></span>
                                       </div><!-- card__beds -->
                                       <div class="card__price">
-                                          Цена за сутки: <span>2000</span> руб
+                                          Цена за сутки: <span><?php the_field('stoimost_arendy'); ?></span> руб
                                       </div>
                                   </div><!-- card__content -->
                               </article>

@@ -5,17 +5,6 @@
                 <img width="93" height="86" src="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/svg/logo.svg" alt="Логотип Квартиры посуточно в Кызыле">
             </a>
           <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'list footer__menu', 'theme_location' => 'footer' ) ); ?>
-<!--            <ul class="list footer__menu">-->
-<!--                <li class="footer__menu__item">-->
-<!--                    <a href="page-about.php">О нас</a>-->
-<!--                </li>-->
-<!--                <li class="footer__menu__item">-->
-<!--                    <a href="page-rules.php">Правила проживания</a>-->
-<!--                </li>-->
-<!--                <li class="footer__menu__item">-->
-<!--                    <a href="page-booking.php">Бронирование и оплата</a>-->
-<!--                </li>-->
-<!--            </ul>-->
             <ul class="list footer__contact">
                 <div class="group">
                     <li class="footer__whatsapp">
@@ -50,7 +39,7 @@
             </div>
             <div class="modal__form" data-form-validate data-callback="base" data-parent-validate="base">
 
-                <form method="post" action="https://echo.htmlacademy.ru" name="contactform">
+                <form method="post" action="<?php echo get_template_directory_uri() ?>/report.php" name="contactform">
                     <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                         <label for="tel">Телефон<span>*</span></label>
                         <input id="tel" name="tel" type="tel" required>
@@ -58,22 +47,26 @@
 
                     <div class="custom-input custom-input--address">
                         <label for="address">Адрес</label>
-                        <input id="address" name="address" type="text" value="">
+                        <input id="address" name="address" type="text" value="<?php if($_GET['flat_name'] !== '') { echo $_GET['flat_name']; }?>">
                     </div>
 
                     <div class="custom-input">
-                        <label for="date_on">Желаемая дата въезда</label>
-                        <input id="date_on" name="date_on" type="date">
+                        <label for="date_on">Желаемая дата въезда<span>*</span></label>
+                        <input id="date_on" name="date_on" type="date" required>
                     </div>
 
                     <div class="custom-input">
-                        <label for="date_off">Желаемая дата выезда</label>
-                        <input id="date_off" name="date_off" type="date">
+                        <label for="date_off">Желаемая дата выезда<span>*</span></label>
+                        <input id="date_off" name="date_off" type="date" required>
                     </div>
 
                     <div class="custom-input custom-input--message">
                         <label for="message">Описание заявки</label>
                         <textarea id="message" name="message" type="text"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input id="agree" type="checkbox" name="agree" required>
+                        <label for="agree">Нажимая на кнопку «Отправить», я даю <a href="#">согласие на обработку своих персональных данных</a></label>
                     </div>
 
                     <button class="btn btn--modal" type="submit">Отправить</button>

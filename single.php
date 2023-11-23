@@ -100,7 +100,8 @@
                         </ul>
                     </div>
                     <div class="map map--single">
-                        <?php the_content() ?>
+                      <?php the_field('karta'); ?>
+
                     </div>
                 </div><!-- flat-group -->
             </div>
@@ -108,40 +109,7 @@
 
         <section class="similar-flats">
             <div class="container container--single">
-                <h3>Похожие квартиры</h3>
-                <ul class="list list--similar-flats">
-
-                  <?php for ($i = 0; $i < 3; $i++) : ?>
-                      <li>
-                          <a href="#">
-                              <article class="card">
-                                  <div class="card__thumb">
-                                      <img src="assets-gulp/build/img/int/2-2.jpg" alt="">
-                                  </div>
-                                  <div class="card__content">
-                                      <h3 class="card__title">ул.Смолина, д.63</h3>
-                                      <div class="card__rooms">
-                                          <svg width="15" height="15">
-                                              <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-room"></use>
-                                          </svg>
-                                          Количество комнат: <span> 1</span>
-                                      </div><!-- card__rooms -->
-                                      <div class="card__beds">
-                                          <svg width="15" height="15">
-                                              <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-bed"></use>
-                                          </svg>
-                                          Спальных мест: <span>4 (2+2)</span>
-                                      </div><!-- card__beds -->
-                                      <div class="card__price">
-                                          Цена за сутки от: <span>2000</span> руб
-                                      </div>
-                                  </div><!-- card__content -->
-                              </article>
-                          </a>
-                      </li>
-                  <?php endfor; ?>
-
-                </ul>
+              <?php the_content() ?>
             </div><!-- container -->
         </section>
     </main>

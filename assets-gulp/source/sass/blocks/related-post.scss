@@ -1,0 +1,32 @@
+.rp4wp-related-posts {
+  margin-top: 50px;
+  padding-bottom: 40px;
+
+  * {
+    float: none !important;
+  }
+
+  .rp4wp-related-post-image {
+    width: 100%;
+    padding-right: 0;
+  }
+
+   ul {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include vp-1023 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-639 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+     li {
+
+     }
+  }
+}
