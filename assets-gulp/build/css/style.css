@@ -1881,34 +1881,6 @@ p:last-child {
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500px;
-  padding: 14px 0 10px 36px;
-}
-
-.custom-toggle:last-of-type {
-  padding: 14px 0 58px 36px;
-}
-
-.custom-toggle input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-}
-
-.custom-toggle label {
-  position: relative;
-  padding-left: 52px;
-  cursor: pointer;
-}
-
-.custom-toggle label span {
-  margin-bottom: 0;
-  margin-left: 0;
 }
 
 .custom-toggle--checkbox .custom-toggle__icon {
@@ -1980,7 +1952,8 @@ p:last-child {
 .custom-toggle .input-message {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -18px;
+  font-size: 12px;
 }
 
 .custom-toggle .input-message.is-invalid {
@@ -3194,6 +3167,23 @@ p:last-child {
   gap: 40px;
 }
 
+.page-404 {
+  padding: 100px 0;
+}
+
+.page-404 a {
+  text-decoration: underline;
+}
+
+.page-report {
+  padding: 100px 0;
+}
+
+.page-report h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3570,10 +3560,6 @@ p:last-child {
     padding: 0 16px;
   }
 
-  .btn--modal {
-    margin-top: 10px;
-  }
-
   .modal__wrapper {
     padding-top: 120px;
   }
@@ -3697,15 +3683,6 @@ p:last-child {
   .custom-input__error,
   .custom-textarea__error {
     bottom: 20px;
-  }
-
-  .custom-toggle {
-    padding: 14px 0 10px 0;
-    width: 100%;
-  }
-
-  .custom-toggle:last-of-type {
-    padding: 14px 0 58px 0;
   }
 
   .custom-select {

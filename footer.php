@@ -39,7 +39,7 @@
             </div>
             <div class="modal__form" data-form-validate data-callback="base" data-parent-validate="base">
 
-                <form method="post" action="<?php echo get_template_directory_uri() ?>/report.php" name="contactform">
+                <form id="form" method="post" action="<?php echo get_template_directory_uri() ?>/report.php" name="contactform">
                     <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                         <label for="tel">Телефон<span>*</span></label>
                         <input id="tel" name="tel" type="tel" required>
@@ -47,7 +47,7 @@
 
                     <div class="custom-input custom-input--address">
                         <label for="address">Адрес</label>
-                        <input id="address" name="address" type="text" value="<?php if($_GET['flat_name'] !== '') { echo $_GET['flat_name']; }?>">
+                        <input id="address" name="address" type="text" value="<?php if(isset($_GET['flat_name']) && !empty($_GET['flat_name'])) { echo $_GET['flat_name']; }?>">
                     </div>
 
                     <div class="custom-input">
@@ -64,12 +64,13 @@
                         <label for="message">Описание заявки</label>
                         <textarea id="message" name="message" type="text"></textarea>
                     </div>
-                    <div class="checkbox">
+                    <div class="custom-toggle custom-toggle--checkbox checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
                         <input id="agree" type="checkbox" name="agree" required>
                         <label for="agree">Нажимая на кнопку «Отправить», я даю <a href="#">согласие на обработку своих персональных данных</a></label>
                     </div>
-
-                    <button class="btn btn--modal" type="submit">Отправить</button>
+                    <input id="check" name="check" type="hidden" value="">
+                    <button class="btn btn--modal" type="submit" onclick="document.getElementById('check').value = 'nospam';">Забронировать</button>
+                    <p class="email-success"></p>
                 </form>
 
             </div>
@@ -77,8 +78,6 @@
     </div>
 </div>
 
-<script src="assets-gulp/build/js/vendor.min.js"></script>
-<script src="assets-gulp/build/js/main.min.js"></script>
 <?php wp_footer() ?>
 </body>
 

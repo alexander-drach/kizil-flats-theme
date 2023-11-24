@@ -41,8 +41,5 @@
     border-radius: 4px;
     margin-top: 30px;
 
-    @include vp-767 {
-      margin-top: 10px;
-    }
   }
 }

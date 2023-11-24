@@ -4,46 +4,6 @@
   line-height: 27px;
   font-weight: 300;
 
-  display: flex;
-  width: 500px;
-  padding: 14px 0 10px 36px;
-
-  @media screen and (max-width: 767px) {
-    padding: 14px 0 10px 0;
-    width: 100%;
-  }
-
-  &:last-of-type {
-    padding: 14px 0 58px 36px;
-
-    @media screen and (max-width: 767px) {
-      padding: 14px 0 58px 0;
-    }
-  }
-
-  input {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-
-    clip: rect(0 0 0 0);
-  }
-
-  label {
-    position: relative;
-
-    padding-left: 52px;
-
-    cursor: pointer;
-
-    span {
-      margin-bottom: 0;
-      margin-left: 0;
-    }
-  }
-
   &--checkbox {
     .custom-toggle__icon {
       position: absolute;
@@ -125,7 +85,8 @@
   .input-message {
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: -18px;
+    font-size: 12px;
 
     &.is-invalid {
       color: #ff0000;

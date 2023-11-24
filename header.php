@@ -4,8 +4,7 @@
 <head>
     <meta charset="<?php bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php the_title() ?>></title>
-    <link rel="stylesheet" href="assets-gulp/build/css/style.min.css">
+    <title><?php the_title() ?></title>
     <?php wp_head() ?>
 </head>
 
